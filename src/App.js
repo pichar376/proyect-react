@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import Componente from "./components/Componente.js";
 import Propiedades from "./components/Propiedades.js";
+import Estado from "./components/estado.js";
+import RenderizadoCondicional from "./components/renderizadoCondicional";
+import RenderizadoElements from "./components/renderizadoElements";
 
 function App() {
   return (
@@ -26,7 +29,7 @@ function App() {
     
       <section>
 <Componente mesage="ho soy un componente desde una funcion expresada"/>
-<Propiedades cadena ="esta es una cadena" 
+<Propiedades cadena ="esta es ua cadena" 
 numero= {19}
 booleano= {false}
 arreglo={[1,2,3,4]}
@@ -36,6 +39,12 @@ function={(num)=>num*num}
 elementoReact={<i>esto es un elemento de react</i>}
 componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 />
+<Estado/>
+<hr/>
+<RenderizadoCondicional/>
+
+<hr/>
+<RenderizadoElements/>
 
       </section>
       </header>

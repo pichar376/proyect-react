@@ -7,6 +7,7 @@ import Estado from "./components/estado.js";
 import RenderizadoCondicional from "./components/renderizadoCondicional";
 import RenderizadoElements from "./components/renderizadoElements";
 
+
 function App() {
   return (
     <div className="App">

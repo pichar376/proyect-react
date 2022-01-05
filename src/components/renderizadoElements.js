@@ -1,5 +1,14 @@
+import { element } from "prop-types";
 import React,{Component} from "react"
+import data from  "../helpers/data.json"
 
+function ElementoLista(props){
+  return(
+    <ul>
+      <a href={props.el.web}>{props.el.name}</a>
+    </ul>
+  )
+}
 export default class  RenderizadoElements extends Component {
   constructor(props){
     super(props);
@@ -7,6 +16,7 @@ export default class  RenderizadoElements extends Component {
       seasons:["primavera","verano","otonio","invierno"],  }
   }
 render(){
+  console.log(data)
   return(
     <div>
       <h2>renderizado de elelmentos</h2>
@@ -16,6 +26,10 @@ render(){
          <li key={index}>{el}</li>
        )}
      </ul>
+    <h3>Frameworks</h3>
+     <ul>
+       {data.Frameworks.map((el)=><ElementoLista key={el.id} el={el}  />)} 
+     </ul> 
     </div>
   )
 }

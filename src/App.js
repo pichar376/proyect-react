@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import Componente from "./components/Componente.js";
 import Propiedades from "./components/Propiedades.js";
-import Estado from "./components/estado.js";
+import Estado from "./components/Estado.js";
 import RenderizadoCondicional from "./components/renderizadoCondicional";
 import RenderizadoElements from "./components/renderizadoElements";
+import Evento from "./components/Eventos"
 
 
 function App() {
@@ -46,6 +47,8 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 
 <hr/>
 <RenderizadoElements/>
+<hr/>
+<Evento/>
 
       </section>
       </header>

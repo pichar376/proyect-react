@@ -1,0 +1,23 @@
+[33mcommit bcbb7827aeae72f408c4adde0afecbcdecb3f90b[m[33m ([m[1;36mHEAD -> [m[1;32mrama-3[m[33m)[m
+Author: pichar376 <96349975+pichar376@users.noreply.github.com>
+Date:   Tue Jan 4 23:18:30 2022 -0600
+
+    en este commit se agrega un archivo json y se arenderizan elementos
+
+[33mcommit dc1857a5b09097b10d14a8c5b237a12be0083010[m
+Author: pichar376 <96349975+pichar376@users.noreply.github.com>
+Date:   Mon Jan 3 00:50:22 2022 -0600
+
+    esta es la actualizacion de rama 3 estado,renderizado condicional,renderizado elements
+
+[33mcommit c213a3ceba481e13ba6a3dddfce4577a7d6dde0c[m[33m ([m[1;32mpropiedades[m[33m, [m[1;32mnew-rama[m[33m)[m
+Author: pichar376 <96349975+pichar376@users.noreply.github.com>
+Date:   Sun Jan 2 01:54:36 2022 -0600
+
+    este es el commit agregando las propiedades
+
+[33mcommit 7c5a2f5da47e4e9c4f0caccd02c9885557a14089[m
+Author: pichar376 <96349975+pichar376@users.noreply.github.com>
+Date:   Sun Jan 2 00:27:53 2022 -0600
+
+    ene ste commit se agreagron los tipos de componentes

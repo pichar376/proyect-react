@@ -6,7 +6,7 @@ import Propiedades from "./components/Propiedades.js";
 import Estado from "./components/Estado.js";
 import RenderizadoCondicional from "./components/renderizadoCondicional";
 import RenderizadoElements from "./components/renderizadoElements";
-import {Evento,Evento7} from "./components/Eventos"
+import {Evento,Evento7,MasSobreEventos,} from "./components/Eventos"
 
 
 function App() {
@@ -51,6 +51,8 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <Evento/>
 <hr/>
 <Evento7/>
+<hr/>
+< MasSobreEventos/>
 
       </section>
       </header>

@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React,{Component} from "react"
 
 export  class Evento extends Component{
@@ -63,3 +64,20 @@ export  class Evento7 extends Component{
     );
   }
 }
+export class MasSobreEventos extends Component{
+  handleClick=(e)=>{
+    console.log(e)
+    console.log(e.target)
+    console.log("saludar")
+  }
+  render(){
+    return(
+      <div>
+      <h1>mas sobre eventos</h1>
+      <button onClick={this.handleClick}>saludar</button>
+      </div>
+    );
+  }
+}
+
+

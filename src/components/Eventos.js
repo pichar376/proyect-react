@@ -64,6 +64,16 @@ export  class Evento7 extends Component{
     );
   }
 }
+function Boton(props){
+
+  return(
+    <div>
+      <button onClick={props.myOnclick}>Boton</button>
+    </div>
+  );
+
+}
+
 export class MasSobreEventos extends Component{
   handleClick=(e,mensaje)=>{
     console.log(e)
@@ -78,6 +88,12 @@ export class MasSobreEventos extends Component{
       <button onClick={(e)=>
        this.handleClick(e,"este es el mensje desde el manejador de eventos")
     }>saludar</button>
+    {/* <Boton onclick={(e)=>{
+      this.handleClick(e,"mensaje de boton") }/> */}
+      <Boton myOnclick={(e)=>
+        this.handleClick(e,"este es un mensaje desde el Boton")
+      } />
+
       </div>
     );
   }

@@ -65,16 +65,19 @@ export  class Evento7 extends Component{
   }
 }
 export class MasSobreEventos extends Component{
-  handleClick=(e)=>{
+  handleClick=(e,mensaje)=>{
     console.log(e)
     console.log(e.target)
     console.log("saludar")
+    console.log(mensaje)
   }
   render(){
     return(
       <div>
       <h1>mas sobre eventos</h1>
-      <button onClick={this.handleClick}>saludar</button>
+      <button onClick={(e)=>
+       this.handleClick(e,"este es el mensje desde el manejador de eventos")
+    }>saludar</button>
       </div>
     );
   }

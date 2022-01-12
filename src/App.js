@@ -7,6 +7,7 @@ import Estado from "./components/Estado.js";
 import RenderizadoCondicional from "./components/renderizadoCondicional";
 import RenderizadoElements from "./components/renderizadoElements";
 import {Evento,Evento7,MasSobreEventos,} from "./components/Eventos"
+import AjaxApis from "./components/ajaxApis"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <header className="App-header">
         <section><img src={logo} className="App-logo" alt="logo" />
         <p>
+          <AjaxApis/>
           Edit <code>src/App.js</code> and save to reload.
         </p>
       
@@ -30,6 +32,7 @@ function App() {
     
     
       <section>
+        
 <Componente mesage="ho soy un componente desde una funcion expresada"/>
 <Propiedades cadena ="esta es ua cadena" 
 numero= {19}
@@ -41,6 +44,7 @@ function={(num)=>num*num}
 elementoReact={<i>esto es un elemento de react</i>}
 componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 />
+
 <Estado/>
 <hr/>
 <RenderizadoCondicional/>
@@ -53,6 +57,8 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <Evento7/>
 <hr/>
 < MasSobreEventos/>
+<hr/>
+
 
       </section>
       </header>

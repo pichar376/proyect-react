@@ -8,6 +8,7 @@ import RenderizadoCondicional from "./components/renderizadoCondicional";
 import RenderizadoElements from "./components/renderizadoElements";
 import {Evento,Evento7,MasSobreEventos,} from "./components/Eventos"
 import AjaxApis from "./components/ajaxApis"
+import ContadorHooks from "./components/ContadorHook"
 
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
       <header className="App-header">
         <section><img src={logo} className="App-logo" alt="logo" />
         <p>
-          <AjaxApis/>
           Edit <code>src/App.js</code> and save to reload.
         </p>
       
@@ -58,6 +58,9 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <hr/>
 < MasSobreEventos/>
 <hr/>
+<AjaxApis/>
+<hr/>
+<ContadorHooks/>
 
 
       </section>

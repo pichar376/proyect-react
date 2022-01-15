@@ -12,6 +12,7 @@ return(
   <nav>
     <button onClick={sumar}>+</button>
     <button onClick={restar}>-</button>
+    <span>{contador}</span>
   </nav>
   </>
 );

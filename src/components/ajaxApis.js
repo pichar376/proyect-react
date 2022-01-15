@@ -4,7 +4,7 @@ import React ,{Component} from "react"
    return(
    <figure>
      <img src={props.avatar} alt={props.name}/>
-     <figcaptin>{props.name}</figcaptin>
+     <figcaption>{props.name}</figcaption>
    </figure>
    );
  }

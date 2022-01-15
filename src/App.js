@@ -9,8 +9,7 @@ import RenderizadoElements from "./components/renderizadoElements";
 import {Evento,Evento7,MasSobreEventos,} from "./components/Eventos"
 import AjaxApis from "./components/ajaxApis"
 import ContadorHooks from "./components/ContadorHook"
-
-
+import ScrollHook from "./components/ScrollHooks"
 function App() {
   return (
     <div className="App">
@@ -61,6 +60,8 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <AjaxApis/>
 <hr/>
 <ContadorHooks/>
+<hr/>
+<ScrollHook/>
 
 
       </section>

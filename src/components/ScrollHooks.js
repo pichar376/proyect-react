@@ -14,9 +14,9 @@ export default function ScrollHook() {
 
   window.addEventListener("scroll",actualizarScrollY);
 
-  return ()=>{
+   return ()=>{
     window.removeEventListener("scroll",actualizarScrollY)
-  };
+  }; 
 },[]);
   
   return(

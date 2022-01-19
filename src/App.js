@@ -9,7 +9,16 @@ import RenderizadoElements from "./components/renderizadoElements";
 import {Evento,Evento7,MasSobreEventos,} from "./components/Eventos"
 import AjaxApis from "./components/ajaxApis"
 import ContadorHooks from "./components/ContadorHook"
+ import Example from "./components/prueba"  
+import RelojHook from "./components/RelojHooks"
 import ScrollHook from "./components/ScrollHooks"
+import ApiHook from "./components/ApisHooks"
+
+
+
+
+
+
 function App() {
   return (
     <div className="App">
@@ -57,14 +66,24 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <hr/>
 < MasSobreEventos/>
 <hr/>
+
 <AjaxApis/>
+<hr/>
+ <ScrollHook/> 
+<hr/>
+ <RelojHook/>  
 <hr/>
 <ContadorHooks/>
 <hr/>
-<ScrollHook/>
+<Example/>
+<hr/>
+<ApiHook/>
+<br/>
+<br/>
+<br/>
+<br/>
 
-
-      </section>
+</section>
       </header>
       
       </div>

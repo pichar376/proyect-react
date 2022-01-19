@@ -11,7 +11,7 @@ function Pokemon ({avatar,name}){
 
 export default function ApiHook(){
   const[pokemons,setPokemons]=useState([])
-  useEffect(()=>{
+  /* useEffect(()=>{
     let url="https://pokeapi.co/api/v2/pokemon"
     fetch(url)
     .then((res)=>res.json())
@@ -32,7 +32,30 @@ export default function ApiHook(){
       })
   
     })
-  },[])
+  },[]) */
+ useEffect(()=>{
+   const getPokemons=async(url)=>{
+   let res =await fetch(url),
+    json =await res.json();
+    console.log(json)
+    json.results.forEach(async(el)=>{
+      let res = await fetch(el.url),
+      json=await res.json();
+      
+          let pokemon={
+            id:json.id,
+            name:json.name,
+            avatar:json.sprites.front_default,
+
+          };  
+          
+          setPokemons((pokemons)=>[...pokemons,pokemon])
+
+        })}
+        getPokemons("https://pokeapi.co/api/v2/pokemon/");
+        
+    
+  },[]);
   return (
     <><h1>peticiones asincronas en hooks</h1>
      {

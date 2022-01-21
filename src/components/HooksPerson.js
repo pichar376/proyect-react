@@ -7,6 +7,8 @@ export default function HookPerson(){
   let url= "https://pokeapi.co/api/v2/pokemon";
   url="https://jsonplaceholder.typicode.com/users";
 let {data,isPending,error}=useFetch(url);
+let arr=[];
+
 return(
   <>
   <h1>hook personalizados</h1>

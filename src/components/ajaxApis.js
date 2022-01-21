@@ -24,7 +24,7 @@ export default class AjaxApis extends Component{
     let url="https://pokeapi.co/api/v2/pokemon"
     fetch(url)
     .then((res)=>res.json())
-    .then((json)=>{console.log(json)
+    .then((json)=>{
       json.results.forEach((el)=>{
         fetch(el.url)
         .then((res)=>res.json())

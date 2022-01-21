@@ -14,6 +14,7 @@ import RelojHook from "./components/RelojHooks"
 import ScrollHook from "./components/ScrollHooks"
 import ApiHook from "./components/ApisHooks"
 import HookPerson from "./components/HooksPerson"
+import Referencias from "./components/Referencias"
 
 
 
@@ -81,6 +82,8 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <ApiHook/>
 <hr/>
 <HookPerson/>
+<hr/>
+<Referencias/>
 <br/>
 <br/>
 <br/>

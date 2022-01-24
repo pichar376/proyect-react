@@ -18,7 +18,7 @@ refMenuBtn.current.textContent="menu";
     <>
     <h1>Referencias</h1>
     <button id="menu-btn" ref ={refMenuBtn} onClick={handleToggleMenu}>menu</button>
-     <nav id="menu" ref= {refMenu}>
+     <nav id="menu" style={{display:"none"}}ref= {refMenu}>
        <a href="#">section1</a><br/>
        <a href="#">section2</a><br/>
        <a href="#">section3</a><br/>

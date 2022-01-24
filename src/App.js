@@ -15,6 +15,7 @@ import ScrollHook from "./components/ScrollHooks"
 import ApiHook from "./components/ApisHooks"
 import HookPerson from "./components/HooksPerson"
 import Referencias from "./components/Referencias"
+import Formularios from "./components/Formularios"
 
 
 
@@ -84,6 +85,8 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <HookPerson/>
 <hr/>
 <Referencias/>
+<hr/>
+<Formularios/>
 <br/>
 <br/>
 <br/>

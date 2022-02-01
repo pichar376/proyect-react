@@ -17,6 +17,7 @@ import HookPerson from "./components/HooksPerson"
 import Referencias from "./components/Referencias"
 import Formularios from "./components/Formularios"
 import Estilos from "./components/Estilos"
+import ComponentesEstilizados from "./components/ComponentesEstilizados";
 
 
 
@@ -90,6 +91,8 @@ componenteReact={<Componente mesage="soy un componente pasado com props"/>}
 <Formularios/>
 <hr/>
 <Estilos/>
+<hr/>
+<ComponentesEstilizados/>
 <br/>
 <br/>
 <br/>

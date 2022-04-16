@@ -1,10 +1,10 @@
-const Main = ({theme}) => {
+const Main = ({theme,texts}) => {
   return ( 
     <div>
       <main className={theme}>
-        <p>Bienbenid@ invitad@</p>
-        <p>Hola Usuari@</p>
-   <p>Mi contenido principal</p>
+        <p>{texts.mainWelcome}</p>
+        <p>{texts.mainHello}</p>
+   <p>{texts.mainContent}</p>
       </main>
     </div>
    );
